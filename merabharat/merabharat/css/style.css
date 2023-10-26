@@ -1,0 +1,199 @@
+*{
+	margin: 0; padding: 0;box-sizing: border-box;
+	
+}
+
+header{
+	width: 100%; height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("../da2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 5s;
+
+	animation: animate 16s ease-in-out infinite;
+
+}
+
+nav{
+	width: 100%; height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white; display: flex; justify-content: space-between;
+	align-items: center; text-transform: uppercase;
+}
+
+@keyframes animate{
+	
+	0%{
+		background-image: url(../da2.jpg);
+	}
+	20%{
+		background-image: url(../taj.jpg);
+	}
+	40%{
+		background-image: url(../jaipur\ hw.jpg);
+	}
+	50%{
+		background-image: url(../k1.jpg);
+	}
+	70%{
+		background-image: url(../bara-imambara\ lko.jpg);
+	}
+	80%{
+		background-image: url(../del.jpg);
+	}
+	100%{
+		background-image: url(../mumb.jpg);
+	}
+}
+nav .logo{
+	width: 35%; 
+	text-align: center;
+	background-color: red;
+}
+
+nav .menu{
+	width: 40%;  
+	display: flex; justify-content: space-around;
+}
+
+nav .menu a {
+	width: 25%;
+	text-decoration: none; color: white;
+	font-weight: bold;
+}
+
+nav .menu a:first-child{
+ /*color: #00b894;*/
+}
+
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; color: white;
+}
+
+section{
+
+}
+
+section h3{
+	font-size: 35px; font-weight: 200; letter-spacing: 3px;
+	
+}
+
+section h1{
+	margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section p{
+	font-size: 30px;
+	font-style: italic;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    
+	font-family: 'Meow Script', cursive;
+      background-color: rgb(255, 51, 0);
+	
+}
+
+section a{
+	padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+	/*background: #00b894;*/
+	background: #fff;
+	transition:0.5s;
+	color: #000;
+}
+
+.btnone:hover{
+	background: #00b894;
+	color: white;
+}
+
+section .btntwo{
+	
+	background: #fff;
+	color: #000;
+}
+
+ .btntwo:hover{
+ 	background: #00b894;
+	color: #000;
+ }
+ 
+ 
+ section .btnthree{
+	
+	background: #fff;
+	color: #000;
+}
+
+ .btnthree:hover{
+ 	background: #00b894;
+	color: #000;
+ }
+ 
+ section .btnfour{
+	
+	background: #fff;
+	color: #000;
+}
+
+ .btnfour:hover{
+ 	background: #00b894;
+	color: #000;
+ }
+ 
+ section .btnfive{
+	
+	background: #fff;
+	color: #000;
+}
+
+ .btnfive:hover{
+ 	background: #00b894;
+	color: #000;
+ }
+ section .btnsix{
+	
+	background: #fff;
+	color: #000;
+}
+
+ .btnsix:hover{
+ 	background: #00b894;
+	color: #000;
+ }
+ 
+.change_content:after{
+	content: '';
+	animation: changetext 16s infinite linear;
+	color: #00b894;
+}
+
+@keyframes changetext{
+	00%  {content:"Darjeeling";}
+	20% { content:"Agra"; }
+    40% { content:"Jaipur"; }
+    50% { content: "kerala"; }
+	70% { content: "lucknow";}
+    80% { content: "delhi"; }
+    100% { content: "Mumbai"; }
+}
